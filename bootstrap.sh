@@ -5,5 +5,6 @@ debconf-set-selections <<< 'mysql-server mysql-server/root_password_again passwo
 
 apt-get update
 apt-get install -y apache2 libapache2-mod-php5 php5 php5-mysql php5-xdebug mysql-server vim git
+mkdir /vagrant/www
 rm -rf /var/www
 ln -fs /vagrant/www /var/www
